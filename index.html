@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app-container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name" aria-label="City name" autocomplete="off">
+                <button id="search-button" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        </section>
+
+        <!-- Weather Display Section -->
+        <section class="weather-display">
+            <div class="weather-icon">
+                <img id="weather-icon" src="images/default.png" alt="Weather Icon">
+            </div>
+            <div class="temperature">
+                <span id="temperature-value"></span><span>°C</span>
+            </div>
+            <div class="description" id="description-text"></div>
+        </section>
+
+        <!-- Additional Details Section -->
+        <section class="details-section">
+            <div class="detail">
+                <i class="fa-solid fa-water"></i>
+                <div class="detail-text">
+                    <span id="humidity-value"></span><span>%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="detail">
+                <i class="fa-solid fa-wind"></i>
+                <div class="detail-text">
+                    <span id="wind-speed"></span><span> Km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
