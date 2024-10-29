@@ -8,7 +8,7 @@ const humidityValue = document.getElementById('humidity-value');
 const windSpeed = document.getElementById('wind-speed');
 
 // Unsplash API Access Key
-const unsplashAccessKey = 'tQDkhvBimN8yngv126YJBQzduQ7HCf7vMwnIjc4CeLA'; // Replace with your Unsplash Access Key
+const unsplashAccessKey = ''; // Replace with your Unsplash Access Key
 
 searchButton.addEventListener('click', fetchWeather);
 
@@ -21,7 +21,7 @@ function fetchWeather() {
         return;
     }
 
-    const APIKey = '4646807a0f50db8a564f701ddd2aa730'; //Replace with your open weather map API key
+    const APIKey = ''; //Replace with your open weather map API key
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
         .then(data => {
